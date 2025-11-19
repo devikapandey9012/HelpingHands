@@ -83,9 +83,9 @@ npm run lint
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
-**Backend Overview**
+## Backend Overview
 
-The project includes a backend built using Node.js and Express.js to handle API requests and store form data securely in a phpMyAdmin (MySQL) database.
+**The project includes a backend built using Node.js and Express.js to handle API requests and store form data securely in a phpMyAdmin (MySQL) database.**
 
 🔹 Features of the Backend
 
