@@ -83,5 +83,29 @@ npm run lint
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
+**Backend Overview**
+
+The project includes a backend built using Node.js and Express.js to handle API requests and store form data securely in a phpMyAdmin (MySQL) database.
+
+🔹 Features of the Backend
+
+RESTful API built using Express.js
+
+Database connection using MySQL
+
+API routes to handle form submissions (e.g., contact form)
+
+Successful data storage in phpMyAdmin using SQL queries
+
+Organized folder structure with routes, database config, and server setup
+
+🔹 Backend Folder Includes
+
+server.js – Main Express server file
+
+db.js – MySQL database connection using mysql or mysql2
+
+routes/contactRoutes.js – Route to save user data into MySQL
+
 
 
