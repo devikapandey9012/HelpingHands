@@ -1,0 +1,126 @@
+/* Programs Page Styles */
+
+.program-section {
+  padding: 80px 0;
+}
+
+.program-section:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.program-section:nth-child(odd) {
+  background-color: white;
+}
+
+.program-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.program-icon-large {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.program-header h2 {
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.program-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.program-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.feature-item {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.program-section:nth-child(even) .feature-item {
+  background: white;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.feature-item h4 {
+  color: #1f2937;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.feature-item p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Programs CTA */
+.programs-cta {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.programs-cta h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.programs-cta p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.2rem;
+  margin-bottom: 35px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.programs-cta .btn-primary {
+  background-color: white;
+  color: #10b981;
+}
+
+.programs-cta .btn-primary:hover {
+  background-color: #f3f4f6;
+}
+
+.programs-cta .btn-outline {
+  border-color: white;
+  color: white;
+}
+
+.programs-cta .btn-outline:hover {
+  background-color: white;
+  color: #10b981;
+}
+
+@media (max-width: 768px) {
+  .program-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .program-icon-large {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,400 @@
+/* Donate Page Styles */
+
+.why-donate {
+  background-color: white;
+  padding: 80px 0;
+}
+
+.why-donate h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.why-donate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.why-card {
+  text-align: center;
+  padding: 35px;
+  background: #f9fafb;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+.why-icon {
+  font-size: 3rem;
+  color: #10b981;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.why-card h3 {
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.why-card p {
+  color: #6b7280;
+}
+
+/* Donation Form Section */
+.donation-form-section {
+  background-color: #f9fafb;
+  padding: 80px 0;
+}
+
+.donation-form-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.donation-form {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.donation-form h2 {
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+.donation-form h3 {
+  margin: 30px 0 20px;
+  color: #1f2937;
+}
+
+/* Donation Type Selector */
+.donation-type-selector {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.type-btn {
+  flex: 1;
+  padding: 15px 25px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  color: #4b5563;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.type-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.type-btn.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* Amount Grid */
+.amount-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.amount-btn {
+  padding: 20px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.amount-btn:hover {
+  border-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.amount-btn.active {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.amount-btn .amount {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.amount-btn .description {
+  display: block;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Custom Amount */
+.custom-amount {
+  margin-bottom: 30px;
+}
+
+.custom-amount label {
+  display: block;
+  margin-bottom: 10px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.amount-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.amount-input-wrapper .currency {
+  position: absolute;
+  left: 15px;
+  font-size: 1.2rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.amount-input-wrapper input {
+  padding-left: 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Donor Info Form */
+.donor-info form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-checkbox input[type="checkbox"] {
+  width: auto;
+  cursor: pointer;
+}
+
+.form-checkbox label {
+  margin: 0;
+  cursor: pointer;
+  color: #4b5563;
+}
+
+/* Donation Sidebar */
+.donation-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.impact-calculator,
+.payment-methods,
+.tax-info {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.impact-calculator h3,
+.payment-methods h4,
+.tax-info h4 {
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.selected-amount-display {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2563eb;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.selected-amount-display span {
+  font-size: 1.5rem;
+  color: #6b7280;
+}
+
+.impact-breakdown {
+  margin-top: 25px;
+}
+
+.impact-breakdown h4 {
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.impact-breakdown ul {
+  list-style: none;
+  padding: 0;
+}
+
+.impact-breakdown ul li {
+  padding: 8px 0;
+  color: #10b981;
+  font-weight: 500;
+}
+
+.payment-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-icons span {
+  padding: 10px;
+  background: #f9fafb;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.security-note {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #10b981;
+  font-weight: 500;
+}
+
+.tax-info p {
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Other Ways to Help */
+.other-ways-to-help {
+  background-color: white;
+  padding: 80px 0;
+}
+
+.other-ways-to-help h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.support-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.support-card {
+  background: #f9fafb;
+  padding: 35px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.support-card:hover {
+  transform: translateY(-5px);
+}
+
+.support-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.support-card h3 {
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.support-card p {
+  color: #6b7280;
+}
+
+/* Donor Testimonials */
+.donor-testimonials {
+  background-color: #f9fafb;
+  padding: 80px 0;
+}
+
+.donor-testimonials h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.testimonials-slider {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial p {
+  font-size: 1.15rem;
+  color: #4b5563;
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.donor-name {
+  color: #2563eb;
+  font-weight: 600;
+  font-style: normal !important;
+}
+
+@media (max-width: 968px) {
+  .donation-form-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .amount-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .donation-type-selector {
+    flex-direction: column;
+  }
+}

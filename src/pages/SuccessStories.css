@@ -1,0 +1,231 @@
+/* Success Stories Page Styles */
+
+.stories-intro {
+  background-color: white;
+  padding: 60px 0;
+}
+
+.intro-text {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #4b5563;
+}
+
+/* Stories Section */
+.stories-section {
+  background-color: #f9fafb;
+  padding: 80px 0;
+}
+
+.story-detail {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  margin-bottom: 60px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.story-detail.reverse {
+  grid-template-columns: 2fr 1fr;
+}
+
+.story-image-large {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder {
+  font-size: 8rem;
+  margin-bottom: 20px;
+}
+
+.story-name-tag {
+  text-align: center;
+}
+
+.story-name-tag h3 {
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.story-name-tag span {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.story-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.story-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 25px;
+}
+
+.story-impact {
+  background: #f0f9ff;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #2563eb;
+}
+
+.story-impact h4 {
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.story-impact p {
+  color: #2563eb;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Stories Stats */
+.stories-stats {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.stories-stats h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.stat-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box .stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.stat-box .stat-label {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #f9fafb;
+  padding: 80px 0;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.quote-icon {
+  font-size: 4rem;
+  color: #e0e7ff;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.testimonial-card p {
+  color: #4b5563;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  color: #2563eb;
+  font-weight: 600;
+  font-style: normal !important;
+}
+
+/* Stories CTA */
+.stories-cta {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.stories-cta h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.stories-cta p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.2rem;
+  margin-bottom: 35px;
+}
+
+.stories-cta .btn-primary {
+  background-color: white;
+  color: #10b981;
+}
+
+.stories-cta .btn-primary:hover {
+  background-color: #f3f4f6;
+}
+
+.stories-cta .btn-outline {
+  border-color: white;
+  color: white;
+}
+
+.stories-cta .btn-outline:hover {
+  background-color: white;
+  color: #10b981;
+}
+
+@media (max-width: 968px) {
+  .story-detail,
+  .story-detail.reverse {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .image-placeholder {
+    font-size: 6rem;
+  }
+  
+  .stats-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}

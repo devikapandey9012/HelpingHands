@@ -1,0 +1,80 @@
+/* Header Styles */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between logo and text */
+}
+
+.logo-img {
+  width: 50px;   /* adjust size as needed */
+  height: 50px;
+  object-fit: contain;
+}
+
+.header {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: #2563eb;
+  margin: 0;
+}
+
+.logo .tagline {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav a {
+  color: #374151;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #2563eb;
+}
+
+.nav .donate-btn {
+  background-color: #10b981;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.nav .donate-btn:hover {
+  background-color: #059669;
+}
+
+/* Responsive Styles */
+@media (max-width: 968px) {
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
